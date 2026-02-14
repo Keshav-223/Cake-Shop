@@ -1,0 +1,420 @@
+@media (max-width: 576px) {
+
+    /* ===============================
+   NAVBAR BEHAVIOR (RESPONSIVE ONLY)
+   =============================== */
+
+    @media (max-width: 768px) {
+
+        /* Header becomes navbar */
+        header {
+            position: sticky;
+            top: 0;
+            z-index: 999;
+            padding: 1rem;
+        }
+
+        /* Stack top header */
+        .upper_head {
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .menu-icon 
+        {
+            display: block;
+            font-size: 26px;
+            color: white;
+            cursor: pointer;
+            position: absolute;
+            right: 20px;
+            top: 18px;
+        }
+        .head_contact 
+        {
+            display: none;
+        }
+        .mid_text 
+        {
+            margin: auto;
+            width: unset;
+            height: unset;
+        }
+        /* Hide menu initially */
+        .lower_head 
+        {
+            max-height: 0;
+            overflow: hidden;
+            opacity: 0;
+            transition: max-height 0.4s ease, opacity 0.3s ease;
+            background: #000;
+            padding-top: 1rem;
+        }
+        #menu-toggle:checked~.lower_head {
+            max-height: 300px;
+            opacity: 1;
+        }
+
+        /* Mobile menu layout */
+        .menus ul {
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        .menus ul li a {
+            margin: 0;
+            font-size: 16px;
+        }
+
+        /* Hamburger icon
+        .upper_head::after {
+            content: '\2630';
+            ☰
+            font-size: 26px;
+            color: white;
+            cursor: pointer;
+            position: absolute;
+            right: 20px;
+            top: 18px;
+        } */
+
+        /* Toggle menu on tap
+    header:active .lower_head 
+    {
+        display: block;
+    } */
+    }
+
+    /* Slider */
+    .slider {
+        padding: 5rem 1.5rem;
+        height: auto;
+        text-align: center;
+    }
+
+    .slider h1 {
+        font-size: 36px;
+        margin: 0 0 30px 0;
+    }
+
+    .slider_button a {
+        margin-left: 0;
+        display: inline-block;
+    }
+
+    /* Schilers section */
+    .schilers_parent {
+        padding: 4rem 1.5rem;
+    }
+
+    .Schilers_main {
+        flex-direction: column;
+    }
+
+    .Schilers_left,
+    .Schilers_right {
+        width: 100%;
+        margin: 0;
+    }
+
+    .Schilers_right img {
+        width: 100%;
+        height: auto;
+    }
+
+    .Schilers_head h1::after {
+        display: none;
+    }
+
+    /* Cakes */
+    .cake_parent {
+        flex-direction: column;
+        padding: 2rem 1.5rem;
+    }
+
+    .cake1 {
+        margin: 2rem 0;
+    }
+
+    .cake_img img {
+        width: 100%;
+        height: auto;
+    }
+
+    /* Video */
+    .youtube_video {
+        width: 100%;
+        margin: 2rem 0;
+        height: 40vh;
+    }
+
+    /* Food lover */
+    .food_lover {
+        padding: 3rem 1.5rem;
+    }
+
+    .food_lover_main {
+        flex-direction: column;
+    }
+
+    .food_lover_card {
+        width: 100%;
+        margin: 2rem 0;
+    }
+
+    /* Blog */
+    .our_blog {
+        flex-direction: column;
+        gap: 2rem;
+        padding: 0 1.5rem;
+    }
+
+    .our_blog_body {
+        flex-direction: column;
+    }
+
+    .our_blog_body1 {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .first_blog_right_search input {
+        width: unset;
+    }
+
+    .fifth_blog_right_subscribe button {
+        width: 100%;
+    }
+
+    .our_blog_body1_img img {
+        width: 100%;
+        height: auto;
+    }
+
+    .our_blog_body1_content {
+        width: 100%;
+        margin-top: 1.5rem;
+    }
+
+    .our_blog_body1_content p {
+        text-align: unset;
+        padding: 0 10px;
+    }
+
+    /* Instagram */
+    .instra_parent {
+        flex-wrap: wrap;
+    }
+
+    .instra1 {
+        /* width: 45%; */
+        margin: 10px;
+    }
+
+    .instra1 img {
+        width: 100%;
+    }
+
+    /* Blog */
+    .blog_date {
+        position: static;
+        margin: 10px 0;
+    }
+
+    .first_blog_para {
+        padding: 0;
+    }
+
+    /* Contact Map */
+    .contact_map iframe {
+        width: 100%;
+        height: 300px;
+    }
+
+    /* Footer */
+    footer {
+        margin: 4rem 1.5rem;
+    }
+
+    .footer_main,
+    .footer_content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .menu ul {
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+
+    .footer_content_left,
+    .footer_content_right {
+        width: 100%;
+    }
+
+    .footer_contact {
+        flex-direction: column;
+    }
+
+    .footer_contact_first {
+        margin: 2rem 0;
+    }
+}
+
+/* =========================
+   TABLET (max-width: 768px)
+========================= */
+@media (max-width: 768px) {
+
+    .slider h1 {
+        font-size: 48px;
+    }
+
+    .Schilers_left {
+        width: 100%;
+    }
+
+    .Schilers_right img {
+        width: 100%;
+    }
+
+    .cake_parent {
+        flex-wrap: wrap;
+        gap: 2rem;
+    }
+
+    /* 
+    .cake1 {
+        width: 45%;
+    }
+
+    .food_lover_card {
+        width: 45%;
+    } */
+
+    .our_blog_body1_content {
+        width: 100%;
+    }
+
+    .footer_icon {
+        display: flex;
+        /* flex-wrap: wrap; */
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .footer_icon a {
+        width: 100%;
+        max-width: 260px;
+        text-align: center;
+        padding: 14px 20px;
+        margin: 0;
+        font-size: 14px;
+    }
+
+    .footer_icon i {
+        margin-right: 10px;
+    }
+}
+
+
+/* =========================
+   SMALL LAPTOP (max-width: 992px)
+========================= */
+@media (max-width: 992px) {
+
+    .Schilers_main {
+        gap: 2rem;
+    }
+
+    .cake_img img {
+        width: 100%;
+        height: auto;
+    }
+
+    /* .food_lover_card {
+        width: 30%;
+    } */
+
+    .our_blog_body1_img img {
+        width: 320px;
+        height: auto;
+    }
+
+    section {
+        flex-direction: column;
+        padding: 2rem 1.5rem;
+    }
+
+    .blog_left,
+    .blog_right {
+        width: 100%;
+    }
+
+    .first_blog_img img,
+    .first_blog_para {
+        width: 100%;
+    }
+
+    .first_blog {
+        margin: 0;
+    }
+
+    .blog_date {
+        top: 260px;
+        left: 20px;
+    }
+
+    .first_blog_right_search,
+    .first_blog_right_category,
+    .second_blog_right,
+    .third_blog_right,
+    .fourth_blog_right,
+    .fifth_blog_right {
+        width: 100%;
+    }
+
+    /* Contact Page */
+    section.contact {
+        flex-direction: column;
+        padding: 2rem 1.5rem;
+    }
+
+    .contact_article,
+    .contact_aside {
+        width: 100%;
+    }
+
+    .contact_form_parent input,
+    .contact_form_parent textarea {
+        width: 100% !important;
+        margin: 10px 0 !important;
+    }
+
+    .contact_form_right_icon1 {
+        margin: 20px 0;
+    }
+
+    .footer_icon {
+        display: flex;
+        /* flex-wrap: wrap; */
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        gap: 40px;
+    }
+
+    .footer_icon a {
+        width: 100%;
+        max-width: 260px;
+        text-align: center;
+        padding: 14px 20px;
+        margin: 0;
+        font-size: 14px;
+    }
+
+    .footer_para p {
+        text-align: center;
+    }
+}
